@@ -12,6 +12,7 @@
 - square(12) -> (48, 144, 16.970562748477143)
 - square(7) -> (28, 49, 9.899494936611665)
 """
+
 from math import sqrt
 
 
@@ -25,8 +26,7 @@ def square(side: str) -> tuple:
     :rtype: tuple
     """
 
-
-    return None
+    return float(side) * 4, float(side) ** 2, float(side) * sqrt(2)
 
 
 if __name__ == '__main__':

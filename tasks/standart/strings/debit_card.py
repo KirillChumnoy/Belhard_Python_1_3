@@ -14,7 +14,7 @@ def hide_debit_numbers(card_number: str) -> str:
     :return: номер карты, вида 1111********1111
     """
 
-    return None
+    return card_number[:4] + (len(card_number[4:-4]) * '*') + card_number[-4:]
 
 
 if __name__ == '__main__':

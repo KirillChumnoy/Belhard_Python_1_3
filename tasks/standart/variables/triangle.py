@@ -10,6 +10,8 @@
 triangle(3, 4) -> (5, 12, 6)
 """
 
+from math import sqrt
+
 
 def triangle(side_1: int, side_2: int) -> tuple:
     """
@@ -25,7 +27,11 @@ def triangle(side_1: int, side_2: int) -> tuple:
     :rtype: tuple
     """
 
-    return None
+    gp = sqrt((side_1 ** 2) + (side_2 ** 2))
+    pr = side_1 + side_2 + gp
+    pl = side_1 * side_2 / 2
+
+    return gp, pr, pl
 
 
 if __name__ == '__main__':
